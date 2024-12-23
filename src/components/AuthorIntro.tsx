@@ -1,4 +1,3 @@
-import React from "react";
 import "./AuthorIntro.css"; // Import the styles
 
 const AuthorIntro = () => {

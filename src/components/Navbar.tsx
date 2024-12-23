@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   // Function to scroll to a specific section
-  const scrollToSection = (section) => {
+  const scrollToSection = (section: string) => {
     scroller.scrollTo(section, {
       duration: 500,
       smooth: true,
@@ -24,13 +24,23 @@ const Navbar = () => {
       <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link onClick={() => scrollToSection("author-intro")}>Home</Link>
+            <Link to="section1" onClick={() => scrollToSection("author-intro")}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link onClick={() => scrollToSection("featured-books")}>Books</Link>
+            <Link
+              to="section2"
+              onClick={() => scrollToSection("featured-books")}
+            >
+              Books
+            </Link>
           </li>
           <li>
-            <Link onClick={() => scrollToSection("follow-sumaya")}>
+            <Link
+              to="section3"
+              onClick={() => scrollToSection("follow-sumaya")}
+            >
               Follow Sumaya
             </Link>
           </li>

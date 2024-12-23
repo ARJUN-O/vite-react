@@ -1,11 +1,8 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./BookDetails.css";
 
 const BookDetails = () => {
-  const location = useLocation();
   const navigate = useNavigate();
-  const { title, coverImage, fullDescription } = location.state || {};
 
   return (
     <div className="book-details-page">

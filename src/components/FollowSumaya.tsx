@@ -1,4 +1,3 @@
-import React from "react";
 import "./FollowSumaya.css";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Import FontAwesome
 
