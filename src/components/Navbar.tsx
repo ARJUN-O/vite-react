@@ -11,7 +11,7 @@ const Navbar = () => {
   // Function to scroll to a specific section
   const scrollToSection = (section: string) => {
     scroller.scrollTo(section, {
-      duration: 500,
+      duration: 0,
       smooth: true,
     });
   };
@@ -24,25 +24,28 @@ const Navbar = () => {
       <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="section1" onClick={() => scrollToSection("author-intro")}>
+            <div
+              className="nav-item"
+              onClick={() => scrollToSection("author-intro")}
+            >
               Home
-            </Link>
+            </div>
           </li>
           <li>
-            <Link
-              to="section2"
+            <div
+              className="nav-item"
               onClick={() => scrollToSection("featured-books")}
             >
               Books
-            </Link>
+            </div>
           </li>
           <li>
-            <Link
-              to="section3"
+            <div
+              className="nav-item"
               onClick={() => scrollToSection("follow-sumaya")}
             >
               Follow Sumaya
-            </Link>
+            </div>
           </li>
         </ul>
       </div>

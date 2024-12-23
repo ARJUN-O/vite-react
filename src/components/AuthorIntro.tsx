@@ -9,10 +9,10 @@ const AuthorIntro = () => {
           alt="Sumaya Profile"
           className="profile-image"
         />
-        <div className="user-name">Sumaya</div>
+        <div className="user-name">Sumaya Siddique</div>
       </div>
       <div className="content-div">
-        <div className="user-name">Sumaya</div>
+        <div className="user-name">Sumaya Siddique</div>
         <div className="bio">
           Welcome to my corner of the world! I’m a writer fueled by a passion
           for crafting feel-good, light-hearted stories that leave readers

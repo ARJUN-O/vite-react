@@ -7,27 +7,23 @@ const FollowSumaya = () => {
       <h2>Follow Sumaya</h2>
       <div className="social-icons">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/memoirs_of_an_amateur_?igsh=dXJiMGxrbDdwbDR1"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-instagram"></i>
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/share/15d6b9Fmag/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-facebook"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a style={{ pointerEvents: "none" }} rel="noopener noreferrer">
           <i className="fab fa-twitter"></i>
         </a>
-        <a
-          href="mailto:sumaya@example.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a style={{ pointerEvents: "none" }}>
           <i className="fas fa-envelope"></i>
         </a>
       </div>

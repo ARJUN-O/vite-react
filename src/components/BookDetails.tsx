@@ -40,9 +40,10 @@ const BookDetails = () => {
           the greatest challenges.
         </p>
         <a
-          href="https://www.amazon.com" // Replace with actual Amazon link
-          target="_blank"
-          rel="noopener noreferrer"
+          // href="https://www.amazon.com" // Replace with actual Amazon link
+          // target="_blank"
+          // rel="noopener noreferrer"
+          style={{ pointerEvents: "none" }}
           className="buy-button"
         >
           Buy on Amazon
