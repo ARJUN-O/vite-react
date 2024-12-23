@@ -1,0 +1,143 @@
+/* Container for AuthorIntro */
+.author-intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+}
+
+.image-div {
+  min-width: 240px;
+}
+
+.image-div .user-name {
+  display: none;
+}
+
+.user-name,
+.bio {
+  text-align: left;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 239px;
+  height: 239px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* User Name */
+.user-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Bio Section */
+.bio {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons Section */
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Follow Button Style */
+.follow-button {
+  background-color: #ff6a00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.follow-button:hover {
+  background-color: #ff8c42;
+}
+
+/* Social Icons Style */
+.social-icons a {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6a00;
+}
+
+@media (max-width: 992px) {
+  .user-name {
+    display: none;
+  }
+  .image-div .user-name {
+    display: block;
+  }
+
+  .image-div {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .author-intro-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .bio {
+    margin-bottom: 0px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-name {
+    font-size: 1.6rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+  }
+}

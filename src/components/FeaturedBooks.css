@@ -1,0 +1,110 @@
+/* Featured Book Section Styling */
+.featured-books {
+  padding: 60px 20px;
+  /* background: #fef6f0; */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff6a00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Book Card Styling */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Book Image Styling */
+.book-image-container {
+  flex-shrink: 0;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Content Styling */
+.book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.book-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+.book-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ellipsis Effect */
+.book-description::after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  padding-left: 10px;
+}
+
+/* Button Styling */
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  align-self: start;
+}
+
+.book-button:hover {
+  background-color: #e55a00;
+}
+
+/* Responsive Layout */
+@media (max-width: 769px) {
+  .book-button {
+    margin: auto;
+  }
+}
+
+/* Responsive Layout */
+@media (min-width: 769px) {
+  .book-card {
+    flex-direction: row;
+    text-align: left;
+  }
+}
