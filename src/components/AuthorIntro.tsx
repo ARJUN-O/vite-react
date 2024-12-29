@@ -32,7 +32,7 @@ const AuthorIntro = () => {
       <div className="content-div">
         <div className="user-name">Sumaya Siddique</div>
         <div
-          className={`bio expanded`}
+          className={`bio`}
           // className={`bio ${expanded ? "expanded" : ""}`}
           // onTouchStart={(e) => e.preventDefault()}
           // onClick={() => setExpanded(!expanded)}
