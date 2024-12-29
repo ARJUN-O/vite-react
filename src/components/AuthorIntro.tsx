@@ -20,9 +20,6 @@ const AuthorIntro = () => {
           books and reading, I hope you find something that resonates with you.
           Let’s create a world of stories together!`;
 
-  const handleToggle = () => {
-    setExpanded(!expanded);
-  };
   return (
     <div id="author-intro" className="author-intro-container">
       <div className="image-div">
