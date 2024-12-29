@@ -1,6 +1,9 @@
 .book-details-page {
   padding: 0px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .back-button {
@@ -11,6 +14,8 @@
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .back-button:hover {

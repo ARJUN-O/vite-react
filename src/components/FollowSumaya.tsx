@@ -20,9 +20,9 @@ const FollowSumaya = () => {
         >
           <i className="fab fa-facebook"></i>
         </a>
-        <a style={{ pointerEvents: "none" }} rel="noopener noreferrer">
+        {/* <a style={{ pointerEvents: "none" }} rel="noopener noreferrer">
           <i className="fab fa-twitter"></i>
-        </a>
+        </a> */}
         <a href="mailto:sumayasiddique@gmail.com" target="_blank">
           <i className="fas fa-envelope"></i>
         </a>

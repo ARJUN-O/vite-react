@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./BookDetails.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const BookDetails = () => {
   const navigate = useNavigate();
@@ -7,7 +9,8 @@ const BookDetails = () => {
   return (
     <div className="book-details-page">
       <button className="back-button" onClick={() => navigate(-1)}>
-        ← Back
+        <FontAwesomeIcon icon={faArrowLeft} />
+        Back
       </button>
       <div className="book-info">
         <img
@@ -40,13 +43,12 @@ const BookDetails = () => {
           the greatest challenges.
         </p>
         <a
-          // href="https://www.amazon.com" // Replace with actual Amazon link
-          // target="_blank"
-          // rel="noopener noreferrer"
-          style={{ pointerEvents: "none" }}
+          href="https://www.booklove.co.in/product-page/f2-factor"
+          target="_blank"
+          rel="noopener noreferrer"
           className="buy-button"
         >
-          Buy on Amazon
+          Buy on Booklove
         </a>
       </div>
     </div>

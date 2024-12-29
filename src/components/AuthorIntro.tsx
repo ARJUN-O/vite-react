@@ -1,20 +1,10 @@
+import { useState } from "react";
 import "./AuthorIntro.css"; // Import the styles
 
 const AuthorIntro = () => {
-  return (
-    <div id="author-intro" className="author-intro-container">
-      <div className="image-div">
-        <img
-          src="/images/sumaya-profile1.jpeg" // Replace with the correct image path
-          alt="Sumaya Profile"
-          className="profile-image"
-        />
-        <div className="user-name">Sumaya Siddique</div>
-      </div>
-      <div className="content-div">
-        <div className="user-name">Sumaya Siddique</div>
-        <div className="bio">
-          Welcome to my corner of the world! I’m a writer fueled by a passion
+  const [expanded, setExpanded] = useState(false);
+
+  const bioText = `Welcome to my corner of the world! I’m a writer fueled by a passion
           for crafting feel-good, light-hearted stories that leave readers
           smiling. Writing is my adrenaline rush—it’s where my thoughts come
           alive and my heart feels at home. An avid reader at heart, I find
@@ -28,7 +18,28 @@ const AuthorIntro = () => {
           worldview but also the heart of the characters I create. Thank you for
           stopping by. Whether you’re here for my writing or share my love for
           books and reading, I hope you find something that resonates with you.
-          Let’s create a world of stories together!
+          Let’s create a world of stories together!`;
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+  return (
+    <div id="author-intro" className="author-intro-container">
+      <div className="image-div">
+        <img
+          src="/images/sumaya-profile1.jpeg" // Replace with the correct image path
+          alt="Sumaya Profile"
+          className="profile-image"
+        />
+        <div className="user-name">Sumaya Siddique</div>
+      </div>
+      <div className="content-div">
+        <div className="user-name">Sumaya Siddique</div>
+        <div
+          className={`bio ${expanded ? "expanded" : ""}`}
+          onClick={handleToggle}
+        >
+          {bioText}
         </div>
       </div>
     </div>
