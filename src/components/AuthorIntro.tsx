@@ -37,7 +37,8 @@ const AuthorIntro = () => {
         <div className="user-name">Sumaya Siddique</div>
         <div
           className={`bio ${expanded ? "expanded" : ""}`}
-          onClick={handleToggle}
+          onTouchStart={(e) => e.preventDefault()}
+          onClick={() => setExpanded(!expanded)}
         >
           {bioText}
         </div>
