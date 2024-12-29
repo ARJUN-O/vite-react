@@ -50,6 +50,10 @@
   margin-bottom: 20px;
 }
 
+.bio p {
+  padding-bottom: 10px;
+}
+
 /* Buttons Section */
 .buttons-container {
   display: flex;

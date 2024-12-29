@@ -23,6 +23,13 @@ const FollowSumaya = () => {
         {/* <a style={{ pointerEvents: "none" }} rel="noopener noreferrer">
           <i className="fab fa-twitter"></i>
         </a> */}
+        <a
+          href="https://www.linkedin.com/in/sumaya-siddique-5940a240/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
         <a href="mailto:sumayasiddique@gmail.com" target="_blank">
           <i className="fas fa-envelope"></i>
         </a>
