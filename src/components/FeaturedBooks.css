@@ -108,3 +108,27 @@
     text-align: left;
   }
 }
+
+@media (max-width: 415px) {
+  .book-card {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .book-content {
+    gap: 10px;
+  }
+
+  .book-title,
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .featured-books {
+    padding: 40px 20px;
+  }
+}
