@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./AuthorIntro.css"; // Import the styles
 
 const AuthorIntro = () => {
-  const [expanded, setExpanded] = useState(false);
+  // const [expanded, setExpanded] = useState(true);
 
   const bioText = `Welcome to my corner of the world! I’m a writer fueled by a passion
           for crafting feel-good, light-hearted stories that leave readers
@@ -33,9 +33,10 @@ const AuthorIntro = () => {
       <div className="content-div">
         <div className="user-name">Sumaya Siddique</div>
         <div
-          className={`bio ${expanded ? "expanded" : ""}`}
-          onTouchStart={(e) => e.preventDefault()}
-          onClick={() => setExpanded(!expanded)}
+          className={`bio expanded`}
+          // className={`bio ${expanded ? "expanded" : ""}`}
+          // onTouchStart={(e) => e.preventDefault()}
+          // onClick={() => setExpanded(!expanded)}
         >
           {bioText}
         </div>
