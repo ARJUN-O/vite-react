@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Sumaya's World. All Rights Reserved.</p>
+      <p>Copyright © 2025 Sumaya Siddique - All Rights Reserved.</p>
     </footer>
   );
 };
