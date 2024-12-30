@@ -48,16 +48,46 @@
   margin-bottom: 20px;
 }
 
-.buy-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff6a00;
-  color: white;
+.buy-button-amazon,
+.buy-button-booklove {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #ffd814;
+  color: black;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  gap: 10px;
+  width: fit-content;
+  align-items: center;
+  font-weight: 600;
 }
 
-.buy-button:hover {
-  background-color: #e55a00;
+.buy-button-booklove {
+  background-color: #e2d9d9;
+  border: 1px solid darkgray;
+}
+
+.buy-button-amazon:hover {
+  background-color: rgb(229, 191, 0);
+}
+
+.buy-button-booklove:hover {
+  background-color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 445px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 }
