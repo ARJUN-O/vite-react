@@ -24,8 +24,8 @@ const BookDetails = () => {
       try {
         const response = await fetch("https://ipapi.co/json/");
         const data = await response.json();
-        console.log("data", data);
-        const countryCode = data.country_code;
+        const countryCode = data.country_code as keyof typeof countryLinks;
+
         if (countryLinks[countryCode]) {
           setLink(countryLinks[countryCode]);
         }
